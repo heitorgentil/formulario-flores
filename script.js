@@ -54,3 +54,30 @@ function montarObjeto() {
 
     return dados;
 }
+async function salvarPesquisa(dados) {
+
+    const { data, error } = await supabaseClient
+        .from('pesquisa_mercado')
+        .insert([dados]);
+
+    if (error) {
+        console.error(error);
+        alert('Erro ao salvar a pesquisa.');
+        return;
+    }
+
+    console.log(data);
+    alert('Pesquisa enviada com sucesso!');
+}
+
+
+// Evento de envio do formulário
+form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const dados = montarObjeto();
+
+    await salvarPesquisa(dados);
+
+    form.reset();
+});
