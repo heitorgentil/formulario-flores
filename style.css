@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap');
+
+
+:root{
+/* aplicar as variáveis para toda a aplicação/todos os elementos */
+    --nome--variavel: rgb(47, 255, 123);
+
+    --fundo--variavel: #d9f0df;
+
+    --superficie--variavel: #ffffff;
+
+    --titulo--variavel: #1f4d2e;
+
+    --texto--variavel: #555555;
+
+    --borda--variavel: #d9f0df;
+
+    --destaque--variavel: #f4c430;
+
+    --interacao--variavel: #f2994a;
+
+    --texto-claro--variavel: #ffffff;
+
+    --texto-botao--variavel: #1f4d2e;
+
+    --fonte: 'Poppins', sans-serif;
+    
+header{
+    background-color: var(--nome--variavel);
+
+    
+  
+}
