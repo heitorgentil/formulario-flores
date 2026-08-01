@@ -31,10 +31,75 @@
     --texto-botao--variavel: #1f4d2e;
 
     --fonte: 'Poppins', sans-serif;
-    
+Body{
+    background-color: var(--fundo--variavel);
+    font-family: var(--fonte);
+}
 header{
-    background-color: var(--nome--variavel);
+    background-image: url('https://raw.githubusercontent.com/techcomkathia/formulario-flores/refs/heads/main/bg.png');
+    color: var(--texto-claro--variavel);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;  
+}
+main{
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: var(--superficie--variavel);
+        border-radius: 10px;
+    }
 
-    
-  
+h2{
+    color: var(--titulo--variavel);
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+form{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--borda--variavel);
+    border-radius: 5px;
+}
+
+fieldset{
+    border: 1px solid var(--borda--variavel);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend{
+    color: var(--titulo--variavel);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--destaque--variavel);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea{
+    padding: 10px;
+    border: 1px solid var(--borda--variavel);
+    border-radius: 5px;
+    font-family: inherit;
+    margin: 5px;
+}
+
+textarea{
+    width: 100%;
 }
